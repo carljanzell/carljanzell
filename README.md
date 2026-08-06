@@ -78,8 +78,6 @@ I don't just use AI coding tools — I build the infrastructure that makes them 
 
 ## 📫 Connect
 
-- 🌌 **Portfolio:** [darkify19.github.io/carl-janzell-portfolio](https://darkify19.github.io/carl-janzell-portfolio/)
 - ✉️ **Email:** carl.oropesa11@gmail.com
 - 🏢 Currently a dev at [DIC](https://github.com/orgs/University-of-the-Philippines-Los-Banos/teams/dic), UPLB
 
-<sub>Open to opportunities where systems thinking, event-driven architecture, and an AI-native workflow matter more than any single framework.</sub>
