@@ -17,8 +17,8 @@ I build the backbone of a university's HR operations — a constellation of inte
 <table>
 <tr>
 <td align="center"><b>4,000+</b><br/><sub>personnel served</sub></td>
-<td align="center"><b>600+</b><br/><sub>tagged prod deploys</sub></td>
-<td align="center"><b>7</b><br/><sub>production systems</sub></td>
+<td align="center"><b>795</b><br/><sub>tagged prod deploys</sub></td>
+<td align="center"><b>8</b><br/><sub>production systems</sub></td>
 <td align="center"><b>2</b><br/><sub>full stacks — Laravel & Rails</sub></td>
 </tr>
 </table>
@@ -26,13 +26,21 @@ I build the backbone of a university's HR operations — a constellation of inte
 ## 🚀 Featured Projects
 
 **UPLB-TKS — Timekeeping System** · *Lead developer · primary author*
-The backbone of timekeeping for 4,000+ UPLB personnel — DTR engine (biometric + manual merge, grace-period undertime, IP-validated clock-in), leave management serving as the ecosystem's canonical balance source over REST, a reusable approval-workflow state machine with per-transition audit logging, Kafka consumers with data-contract enforcement, and RBAC across 30+ models. Ships behind a real pipeline: **337 tagged production deploys** with AI-drafted, human-reviewed changelogs.
-> **Real production usage** *(180 days to Aug 2026)*: **156,926** attendance punches logged, **82.3%** captured directly by the system rather than keyed in by a timekeeper; **1,274** active personnel in a trailing 30-day window; **219** peak concurrent users.
+The backbone of timekeeping for 4,000+ UPLB personnel — DTR engine (biometric + manual merge, grace-period undertime, IP-validated clock-in), leave management serving as the ecosystem's canonical balance source over REST, a reusable approval-workflow state machine with per-transition audit logging, Kafka consumers with data-contract enforcement, and RBAC across 30+ models. Ships behind a real pipeline: **431 tagged production deploys** with AI-drafted, human-reviewed changelogs. Also carries Portal SSO, Google One Tap, Calendar-driven work-location tagging, and a guest/demo tenant that lets the system be shown to a room without exposing a real employee's record.
+> **Real production usage** *(180 days to 22 Sep 2026)*: **224,490** attendance punches logged, **79.9%** captured directly by the system rather than keyed in by a timekeeper — **96.1%** over the trailing 7 days; **1,486** active personnel in a trailing 30-day window; **567** personnel timing in on an average working day. Traffic, on a shorter 44-day window to the same date: **183,765** page views and **10,369** logins, peaking at **238** concurrent users at the 8 AM clock-in rush.
 `PHP 8.2` `Laravel 11` `Filament 3` `Livewire 3` `MySQL` `Apache Kafka` `PHPUnit 11`
 
 **PerporManTask — Performance Management (IPCR)** · *Sole author*
 A performance-management service deliberately carved out of the timekeeping monolith into its own app, sharing data over Kafka. Semestral rating periods, weighted targets validated to 100%, UP SPMS-compliant PDFs, and a production **human-in-the-loop AI pipeline** that clusters exported task logs into draft reviews with dry-run preview.
 `Laravel 12` `Filament 5` `Kafka` `MySQL` `Tailwind CSS 4` `PHPUnit 11`
+
+**UPLB Kiosk — Offline-First Attendance Terminal** · *Lead developer · primary author*
+Shared walk-up terminals for personnel without a desk — the channel behind **20.1%** of all punches in the 180 days to 22 Sep 2026, and 1,200+ a day by late September. Offline-first punching with local storage and replay, a device token mirrored across cookie and localStorage so one kiosk stays one row, cooldown/rescan suppression against double punches, and CIDR-aware network validation resolved by range specificity.
+`PHP 8.2` `Laravel 12` `Filament 4` `Livewire` `Tailwind CSS 4` `Vite 7`
+
+**UPLB Payroll Control System** · *Core contributor · holiday-pay entitlement + delivery pipeline*
+An audit-first payroll app — integer-centavo computation, effective-dated authorities, segregation of duties, immutable hashed register snapshots — that names its own go-live gates rather than implying sign-off it doesn't have. I own the holiday-pay entitlement vertical (effective-dated authority, resolver returning a verdict value object, policies, Filament resource) and the delivery pipeline.
+`Laravel 13` `Filament 5` `PostgreSQL` `Livewire` `GitHub Actions`
 
 **DAME UPLB — Department Website + CMS** · *Lead developer*
 Public site and admin CMS on the newest stack — faculty profiles, academic programs, research areas, and news. Slug-routed public profiles, a post/category CMS with soft deletes, and a Filament 5 admin using delegated Form/Table/Infolist schema classes.
@@ -45,6 +53,10 @@ Largest single contributor to **SALN e-filing** — Kafka consumer layer with tr
 **samyang — Dating App** · *Solo, full-stack (public source)*
 Range beyond Laravel, and the one project you can read end to end: a [Rails 8 GraphQL API](https://github.com/Darkify19/samyang-back) and a [Vue 2 + Vuex SPA](https://github.com/Darkify19/samyang-front) with Apollo, Cloudinary uploads, swipe/match mechanics, and an admin panel.
 `Ruby on Rails 8` `GraphQL` `Vue 2` `Vuex` `Apollo`
+
+**filament-page-builder — Filament Plugin** · *Author (public source)*
+A drag-and-drop page builder for [Filament](https://filamentphp.com): nested layout canvas, document outline, token style inspector, inline text editing, undo/redo — persisting to the same JSON column the form editor writes, so neither surface owns the content. [Source](https://github.com/carljanzell/filament-page-builder) · [Docs](https://carljanzell.github.io/filament-page-builder/)
+`Laravel` `Filament` `Alpine.js` `Tailwind CSS`
 
 ## 🤖 AI-Native Engineering
 
