@@ -51,12 +51,12 @@ Largest single contributor to **SALN e-filing** — Kafka consumer layer with tr
 `Laravel 11` `Filament 3` `PostgreSQL` `Kafka` `FPDI/FPDF` `Vue 3`
 
 **samyang — Dating App** · *Solo, full-stack (public source)*
-Range beyond Laravel, and the one project you can read end to end: a [Rails 8 GraphQL API](https://github.com/Darkify19/samyang-back) and a [Vue 2 + Vuex SPA](https://github.com/Darkify19/samyang-front) with Apollo, Cloudinary uploads, swipe/match mechanics, and an admin panel.
+Range beyond Laravel: a [Rails 8 GraphQL API](https://github.com/Darkify19/samyang-back) and a [Vue 2 + Vuex SPA](https://github.com/Darkify19/samyang-front) with Apollo, Cloudinary uploads, swipe/match mechanics, and an admin panel.
 `Ruby on Rails 8` `GraphQL` `Vue 2` `Vuex` `Apollo`
 
-**filament-page-builder — Filament Plugin** · *Author (public source)*
-A drag-and-drop page builder for [Filament](https://filamentphp.com): nested layout canvas, document outline, token style inspector, inline text editing, undo/redo — persisting to the same JSON column the form editor writes, so neither surface owns the content. [Source](https://github.com/carljanzell/filament-page-builder) · [Docs](https://carljanzell.github.io/filament-page-builder/)
-`Laravel` `Filament` `Alpine.js` `Tailwind CSS`
+**filament-page-builder — Filament Plugin** · *Author and maintainer (open source, MIT)*
+A drag-and-drop page builder I maintain for the Filament community, listed in the [official Filament plugin directory](https://filamentphp.com/plugins/carl-janzell-page-builder). You lay a page out on a canvas and it saves to the same JSON column the form editor writes, so neither surface owns the content. One Composer command installs the right release for Filament 3, 4 or 5, and it runs the page editor on the DAME website. [Source](https://github.com/Darkify19/filament-page-builder) · [Docs](https://darkify19.github.io/filament-page-builder/) · [Packagist](https://packagist.org/packages/carljanzell/filament-page-builder)
+`Laravel` `Filament 3–5` `Livewire` `Alpine.js` `Pest`
 
 ## 🤖 AI-Native Engineering
 
