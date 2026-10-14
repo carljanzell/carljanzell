@@ -31,7 +31,7 @@ The backbone of timekeeping for 4,000+ UPLB personnel — DTR engine (biometric 
 `PHP 8.2` `Laravel 11` `Filament 3` `Livewire 3` `MySQL` `Apache Kafka` `PHPUnit 11`
 
 **PerporManTask — Performance Management (IPCR)** · *Lead developer · primary author*
-A performance-management service deliberately carved out of the timekeeping monolith into its own app, sharing data over Kafka. Semestral rating periods, weighted targets validated to 100%, UP SPMS-compliant PDFs, and a production **human-in-the-loop AI pipeline** that clusters exported task logs into draft reviews with dry-run preview.
+A performance-management service deliberately carved out of the timekeeping monolith into its own app, sharing data over Kafka. Semestral rating periods, weighted targets validated to 100%, UP SPMS-compliant PDFs, and a production **human-in-the-loop AI pipeline** that clusters exported task logs into draft reviews with dry-run preview. **685** people signed in between 23 Jul and 14 Oct 2026.
 `Laravel 12` `Filament 5` `Kafka` `MySQL` `Tailwind CSS 4` `PHPUnit 11`
 
 **UPLB Kiosk — Offline-First Attendance Terminal** · *Lead developer · primary author*
