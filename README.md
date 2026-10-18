@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-  <a href="https://darkify19.github.io/carl-janzell-portfolio/"><img src="https://img.shields.io/badge/Portfolio-030014?style=for-the-badge&logo=astro&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://darkify19.github.io/carl-janzell-portfolio/"><img src="https://img.shields.io/badge/Portfolio-121519?style=for-the-badge&logo=astro&logoColor=white" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/carl-janzell-764399179/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:carl.oropesa11@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
 ---
 
-I build the backbone of a university's HR operations — a constellation of integrated **Laravel** applications serving **4,000+ personnel** at the University of the Philippines Los Baños, exchanging data over **Apache Kafka** and replacing the paper-based processes behind time, leave, performance reviews, and government-compliance forms. My through-line isn't a framework, though: I've also shipped a full **Ruby on Rails 8 + GraphQL** API with a **Vue + Vuex** client, plus the **AI agent infrastructure** that helps a small team move like a big one.
+I build the backbone of a university's HR operations — an ecosystem of integrated **Laravel** applications serving **4,000+ personnel** at the University of the Philippines Los Baños, exchanging data over **Apache Kafka** and replacing the paper-based processes behind time, leave, performance reviews, and government-compliance forms. My through-line isn't a framework, though: I've also shipped a full **Ruby on Rails 8 + GraphQL** API with a **Vue + Vuex** client, plus the **AI agent infrastructure** that helps a small team move like a big one.
 
 <table>
 <tr>
@@ -94,7 +94,7 @@ I don't just use AI coding tools — I build the infrastructure that makes them 
 
 ## 📫 Connect
 
-- 🌌 **Portfolio:** [darkify19.github.io/carl-janzell-portfolio](https://darkify19.github.io/carl-janzell-portfolio/)
+- 🗺️ **Portfolio:** [darkify19.github.io/carl-janzell-portfolio](https://darkify19.github.io/carl-janzell-portfolio/)
 - 💼 **LinkedIn:** [carl-janzell](https://www.linkedin.com/in/carl-janzell-764399179/)
 - ✉️ **Email:** carl.oropesa11@gmail.com
 - 📍 Based in Calamba, Philippines · Full-Stack Developer (Senior ICT Assistant) at UPLB
