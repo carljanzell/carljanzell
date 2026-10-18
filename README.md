@@ -26,9 +26,9 @@ I build the backbone of a university's HR operations — a constellation of inte
 ## 🚀 Featured Projects
 
 **UPLB-TKS — Timekeeping System** · *Lead developer · primary author*
-The backbone of timekeeping for 4,000+ UPLB personnel — DTR engine (biometric + manual merge, grace-period undertime), leave management serving as the ecosystem's canonical balance source over REST, a reusable approval-workflow state machine with per-transition audit logging, Kafka consumers with data-contract enforcement, and RBAC across 30+ models. Ships behind a real pipeline: **441 tagged production deploys** from 8 Apr to 24 Sep 2026, with AI-drafted, human-reviewed changelogs. Also carries Portal SSO, Google One Tap, Calendar-driven work-location tagging, and a guest/demo tenant that lets the system be shown to a room without exposing a real employee's record.
+The backbone of timekeeping for 4,000+ UPLB personnel — DTR engine (biometric + manual merge, grace-period undertime), leave management serving as the ecosystem's canonical balance source over REST, a reusable approval-workflow state machine with per-transition audit logging, Kafka consumers with data-contract enforcement, and RBAC across 30+ models. Ships behind a real pipeline: **441 tagged production deploys** from 8 Apr to 24 Sep 2026, with AI-drafted, human-reviewed changelogs. Also carries Portal SSO, Google One Tap, Calendar-driven work-location tagging, and a guest/demo tenant that lets the system be shown to a room without exposing a real employee's record. Recent work: a push reminder to personnel still clocked in at shift end, and VL/SL/SPL balances computed from HR's imported leave workbook, with each person's Leave Card PDF a click away from the Personnel list.
 > **Real production usage** *(180 days to 13 Oct 2026)*: **273,195** attendance punches logged, **79.4%** captured directly by the system rather than keyed in by a timekeeper — **96.8%** over the trailing 7 days; **1,586** active personnel in a trailing 30-day window; **1,138** personnel timing in on 13 Oct alone. Traffic, on a shorter 65-day window to the same date: **293,334** page views and **18,406** logins, **921** unique users on an average working day, and **264** concurrent users at the 8 AM clock-in rush on 13 Oct.
-`PHP 8.2` `Laravel 11` `Filament 3` `Livewire 3` `MySQL` `Apache Kafka` `PHPUnit 11`
+`PHP 8.2` `Laravel 12` `Filament 3` `Livewire 3` `MySQL` `Apache Kafka` `PHPUnit 11`
 
 **PerporManTask — Performance Management (IPCR)** · *Lead developer · primary author*
 A performance-management service deliberately carved out of the timekeeping monolith into its own app, sharing data over Kafka. Semestral rating periods, weighted targets validated to 100%, UP SPMS-compliant PDFs, and a production **human-in-the-loop AI pipeline** that clusters exported task logs into draft reviews with dry-run preview. **685** people signed in between 23 Jul and 14 Oct 2026.
@@ -57,6 +57,10 @@ Range beyond Laravel: a [Rails 8 GraphQL API](https://github.com/Darkify19/samya
 **filament-page-builder — Filament Plugin** · *Author and maintainer (open source, MIT)*
 A drag-and-drop page builder I maintain for the Filament community, listed in the [official Filament plugin directory](https://filamentphp.com/plugins/carl-janzell-page-builder). You lay a page out on a canvas and it saves to the same JSON column the form editor writes, so neither surface owns the content. One Composer command installs the right release for Filament 3, 4 or 5, and it runs the page editor on the DAME website. [Source](https://github.com/Darkify19/filament-page-builder) · [Docs](https://darkify19.github.io/filament-page-builder/) · [Packagist](https://packagist.org/packages/carljanzell/filament-page-builder)
 `Laravel` `Filament 3–5` `Livewire` `Alpine.js` `Pest`
+
+**filament-insights — Filament Plugin** · *Author and maintainer (open source, MIT)*
+Admin-built stats and chart dashboards on any Filament resource, with no data-source classes: each dashboard reads the resource's own table query, so a chart counts exactly the records its viewer could see in that table. One codebase supports Filament 3, 4 and 5, with version floors set past known security advisories, a Pest suite on a Testbench panel run in CI, and a GitHub release cut for every tag. [Source](https://github.com/Darkify19/filament-insights) · [Packagist](https://packagist.org/packages/carljanzell/filament-insights)
+`Laravel` `Filament 3–5` `Livewire` `anime.js` `Pest`
 
 ## 🤖 AI-Native Engineering
 
