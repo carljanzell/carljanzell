@@ -31,7 +31,7 @@ The backbone of timekeeping for 4,000+ UPLB personnel — DTR engine (biometric 
 `PHP 8.2` `Laravel 12` `Filament 3` `Livewire 3` `MySQL` `Apache Kafka` `PHPUnit 11`
 
 **PerporManTask — Performance Management (IPCR)** · *Lead developer · primary author*
-A performance-management service deliberately carved out of the timekeeping monolith into its own app, sharing data over Kafka. Semestral rating periods, weighted targets validated to 100%, UP SPMS-compliant PDFs, and a production **human-in-the-loop AI pipeline** that clusters exported task logs into draft reviews with dry-run preview. **685** people signed in between 23 Jul and 14 Oct 2026.
+A performance-management service deliberately carved out of the timekeeping monolith into its own app, sharing data over Kafka. Semestral rating periods, weighted targets validated to 100%, UP SPMS-compliant PDFs, and a rating page where the final rating builds live as a reviewer scores. **685** people signed in between 23 Jul and 14 Oct 2026.
 `Laravel 12` `Filament 5` `Kafka` `MySQL` `Tailwind CSS 4` `PHPUnit 11`
 
 **UPLB Kiosk — Offline-First Attendance Terminal** · *Lead developer · primary author*
@@ -68,7 +68,7 @@ I don't just use AI coding tools — I build the infrastructure that makes them 
 
 - **Agent skill libraries** — YAML-triggered deep-dives and DRY catalogues of reusable traits/services, so agents work accurately in each codebase
 - **Executable specifications** — self-contained spec docs a fresh agent can run, with explicit "do not invent" guardrails
-- **AI features in production** — an IPCR drafting flow and an AI changelog generator, both behind human-review gates and guarded by tests
+- **AI in production** — an AI changelog generator behind a human-review gate, guarded by tests (an earlier IPCR drafting flow was retired in Jul 2026)
 
 ## 🛠️ Tech Stack
 
