@@ -17,7 +17,7 @@ I build the backbone of a university's HR operations — an ecosystem of integra
 <table>
 <tr>
 <td align="center"><b>4,000+</b><br/><sub>personnel served</sub></td>
-<td align="center"><b>661</b><br/><sub>production deploys of my code,<br/>8 Apr to 1 Oct 2026</sub></td>
+<td align="center"><b>822</b><br/><sub>production deploys of my code,<br/>8 Apr to 5 Nov 2026</sub></td>
 <td align="center"><b>8</b><br/><sub>production systems</sub></td>
 <td align="center"><b>2</b><br/><sub>full stacks — Laravel & Rails</sub></td>
 </tr>
@@ -26,8 +26,8 @@ I build the backbone of a university's HR operations — an ecosystem of integra
 ## 🚀 Featured Projects
 
 **UPLB-TKS — Timekeeping System** · *Lead developer · primary author*
-The backbone of timekeeping for 4,000+ UPLB personnel — DTR engine (biometric + manual merge, grace-period undertime), leave management serving as the ecosystem's canonical balance source over REST, a reusable approval-workflow state machine with per-transition audit logging, Kafka consumers with data-contract enforcement, and RBAC across 30+ models. Ships behind a real pipeline: **441 tagged production deploys** from 8 Apr to 24 Sep 2026, with AI-drafted, human-reviewed changelogs. Also carries Portal SSO, Google One Tap, Calendar-driven work-location tagging, and a guest/demo tenant that lets the system be shown to a room without exposing a real employee's record. Recent work: a push reminder to personnel still clocked in at shift end, and VL/SL/SPL balances computed from HR's imported leave workbook, with each person's Leave Card PDF a click away from the Personnel list.
-> **Real production usage** *(180 days to 13 Oct 2026)*: **273,195** attendance punches logged, **79.4%** captured directly by the system rather than keyed in by a timekeeper — **96.8%** over the trailing 7 days; **1,586** active personnel in a trailing 30-day window; **1,138** personnel timing in on 13 Oct alone. Traffic, on a shorter 65-day window to the same date: **293,334** page views and **18,406** logins, **921** unique users on an average working day, and **264** concurrent users at the 8 AM clock-in rush on 13 Oct.
+The backbone of timekeeping for 4,000+ UPLB personnel — DTR engine (biometric + manual merge, grace-period undertime), leave management serving as the ecosystem's canonical balance source over REST, a reusable approval-workflow state machine with per-transition audit logging, Kafka consumers with data-contract enforcement, and RBAC across 30+ models. Ships behind a real pipeline: **576 tagged production deploys** from 8 Apr to 5 Nov 2026, with AI-drafted, human-reviewed changelogs. Also carries Portal SSO, Google One Tap, Calendar-driven work-location tagging, and a guest/demo tenant that lets the system be shown to a room without exposing a real employee's record. Recent work: DTRs that lock for payroll, so the payroll app bills from a frozen timesheet it pulls over REST; personnel seeing who changed their records, in plain sentences; and leave balances reconciled against HR's own leave records, with the computation shown to the person.
+> **Real production usage** *(180 days to 5 Nov 2026)*: **331,656** attendance punches logged, **78.6%** captured directly by the system rather than keyed in by a timekeeper — **95.1%** over the trailing 7 days; **2,576** active personnel in a trailing 30-day window; **2,167** personnel timing in on 4 Nov alone. Traffic, on a shorter 88-day window to the same date: **444,014** page views and **30,595** logins, **971** unique users on an average working day (peak **2,204** on 3 Nov), and **470** concurrent users at the 8 AM clock-in rush on 5 Nov.
 `PHP 8.2` `Laravel 12` `Filament 3` `Livewire 3` `MySQL` `Apache Kafka` `PHPUnit 11`
 
 **PerporManTask — Performance Management (IPCR)** · *Lead developer · primary author*
@@ -35,11 +35,11 @@ A performance-management service deliberately carved out of the timekeeping mono
 `Laravel 12` `Filament 5` `Kafka` `MySQL` `Tailwind CSS 4` `PHPUnit 11`
 
 **UPLB Kiosk — Offline-First Attendance Terminal** · *Lead developer · primary author*
-Shared walk-up terminals for personnel without a desk — the channel behind **22.8%** of all punches in the 180 days to 13 Oct 2026, and more than a third of the punches from 1 to 13 Oct. Offline-first punching with local storage and replay, a device token mirrored across cookie and localStorage so one kiosk stays one row, and cooldown/rescan suppression against double punches.
+Shared walk-up terminals for personnel without a desk — the channel behind **24.6%** of all punches in the 180 days to 5 Nov 2026, and nearly a third of the punches from 1 Oct to 5 Nov. Offline-first punching with local storage and replay, a device token mirrored across cookie and localStorage so one kiosk stays one row, and cooldown/rescan suppression against double punches.
 `PHP 8.2` `Laravel 12` `Filament 4` `Livewire` `Tailwind CSS 4` `Vite 7`
 
 **UPLB Payroll Control System** · *Core contributor · holiday-pay entitlement + delivery pipeline*
-An audit-first payroll app — integer-centavo computation, effective-dated authorities, segregation of duties, immutable hashed register snapshots — that names its own go-live gates rather than implying sign-off it doesn't have. I own the holiday-pay entitlement vertical (effective-dated authority, resolver returning a verdict value object, policies, Filament resource) and the delivery pipeline.
+An audit-first payroll app — integer-centavo computation, effective-dated authorities, segregation of duties, immutable hashed register snapshots — that names its own go-live gates rather than implying sign-off it doesn't have. I own the holiday-pay entitlement vertical (effective-dated authority, resolver returning a verdict value object, policies, Filament resource), the billing of contract staff from locked TKS timesheets, and the delivery pipeline.
 `Laravel 13` `Filament 5` `PostgreSQL` `Livewire` `GitHub Actions`
 
 **DAME UPLB — Department Website + CMS** · *Lead developer*
