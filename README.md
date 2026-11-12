@@ -17,7 +17,7 @@ I build the backbone of a university's HR operations — an ecosystem of integra
 <table>
 <tr>
 <td align="center"><b>4,000+</b><br/><sub>personnel served</sub></td>
-<td align="center"><b>822</b><br/><sub>production deploys of my code,<br/>8 Apr to 5 Nov 2026</sub></td>
+<td align="center"><b>878</b><br/><sub>production deploys of my code,<br/>8 Apr to 12 Nov 2026</sub></td>
 <td align="center"><b>8</b><br/><sub>production systems</sub></td>
 <td align="center"><b>2</b><br/><sub>full stacks — Laravel & Rails</sub></td>
 </tr>
@@ -26,8 +26,8 @@ I build the backbone of a university's HR operations — an ecosystem of integra
 ## 🚀 Featured Projects
 
 **UPLB-TKS — Timekeeping System** · *Lead developer · primary author*
-The backbone of timekeeping for 4,000+ UPLB personnel — DTR engine (biometric + manual merge, grace-period undertime), leave management serving as the ecosystem's canonical balance source over REST, a reusable approval-workflow state machine with per-transition audit logging, Kafka consumers with data-contract enforcement, and RBAC across 30+ models. Ships behind a real pipeline: **576 tagged production deploys** from 8 Apr to 5 Nov 2026, with AI-drafted, human-reviewed changelogs. Also carries Portal SSO, Google One Tap, Calendar-driven work-location tagging, and a guest/demo tenant that lets the system be shown to a room without exposing a real employee's record. Recent work: DTRs that lock for payroll, so the payroll app bills from a frozen timesheet it pulls over REST; personnel seeing who changed their records, in plain sentences; and leave balances reconciled against HR's own leave records, with the computation shown to the person.
-> **Real production usage** *(180 days to 5 Nov 2026)*: **331,656** attendance punches logged, **78.6%** captured directly by the system rather than keyed in by a timekeeper — **95.1%** over the trailing 7 days; **2,576** active personnel in a trailing 30-day window; **2,167** personnel timing in on 4 Nov alone. Traffic, on a shorter 88-day window to the same date: **444,014** page views and **30,595** logins, **971** unique users on an average working day (peak **2,204** on 3 Nov), and **470** concurrent users at the 8 AM clock-in rush on 5 Nov.
+The backbone of timekeeping for 4,000+ UPLB personnel — DTR engine (biometric + manual merge, grace-period undertime), leave management serving as the ecosystem's canonical balance source over REST, a reusable approval-workflow state machine with per-transition audit logging, Kafka consumers with data-contract enforcement, and RBAC across 30+ models. Ships behind a real pipeline: **618 tagged production deploys** from 8 Apr to 12 Nov 2026, with AI-drafted, human-reviewed changelogs. Also carries Portal SSO, Google One Tap, Calendar-driven work-location tagging, and a guest/demo tenant that lets the system be shown to a room without exposing a real employee's record. Recent work: DTRs that lock for payroll, so the payroll app bills from a frozen timesheet it pulls over REST; personnel seeing who changed their records, in plain sentences; and leave balances reconciled against HR's own leave records, with the computation shown to the person.
+> **Real production usage** *(30 days to 12 Nov 2026)*: **100,415** attendance punches logged, **88.2%** captured directly by the system rather than keyed in by a timekeeper — **97.9%** over the trailing 7 days; **2,656** personnel clocked in at least once; **2,188** timed in on 4 Nov alone. Traffic over the same window: **222,540** page views and **17,749** logins, **1,249** unique users on an average working day (peak **2,204** on 3 Nov), and **439** concurrent users at the 8 AM clock-in rush on 12 Nov.
 `PHP 8.2` `Laravel 12` `Filament 3` `Livewire 3` `MySQL` `Apache Kafka` `PHPUnit 11`
 
 **PerporManTask — Performance Management (IPCR)** · *Lead developer · primary author*
@@ -35,7 +35,7 @@ A performance-management service deliberately carved out of the timekeeping mono
 `Laravel 12` `Filament 5` `Kafka` `MySQL` `Tailwind CSS 4` `PHPUnit 11`
 
 **UPLB Kiosk — Offline-First Attendance Terminal** · *Lead developer · primary author*
-Shared walk-up terminals for personnel without a desk — the channel behind **24.6%** of all punches in the 180 days to 5 Nov 2026, and nearly a third of the punches from 1 Oct to 5 Nov. Offline-first punching with local storage and replay, a device token mirrored across cookie and localStorage so one kiosk stays one row, and cooldown/rescan suppression against double punches.
+Shared walk-up terminals for personnel without a desk — the channel behind **30.8%** of all punches, nearly a third, in the 30 days to 12 Nov 2026. Offline-first punching with local storage and replay, a device token mirrored across cookie and localStorage so one kiosk stays one row, and cooldown/rescan suppression against double punches.
 `PHP 8.2` `Laravel 12` `Filament 4` `Livewire` `Tailwind CSS 4` `Vite 7`
 
 **UPLB Payroll Control System** · *Core contributor · holiday-pay entitlement + delivery pipeline*
@@ -61,6 +61,14 @@ A drag-and-drop page builder I maintain for the Filament community, listed in th
 **filament-insights — Filament Plugin** · *Author and maintainer (open source, MIT)*
 Admin-built stats and chart dashboards on any Filament resource, with no data-source classes: each dashboard reads the resource's own table query, so a chart counts exactly the records its viewer could see in that table. One codebase supports Filament 3, 4 and 5, with version floors set past known security advisories, a Pest suite on a Testbench panel run in CI, and a GitHub release cut for every tag. [Source](https://github.com/Darkify19/filament-insights) · [Packagist](https://packagist.org/packages/carljanzell/filament-insights)
 `Laravel` `Filament 3–5` `Livewire` `anime.js` `Pest`
+
+**filament-feedback — Filament Plugin** · *Author and maintainer (open source, MIT)*
+In-app feedback for Filament panels, listed in the [official Filament plugin directory](https://filamentphp.com/plugins/carl-janzell-feedback). People press Feedback on any page, tag the modules they mean and how they feel, and follow their thread from Sent to Done; the team answers from one inbox, and a board shows the mood per module so you can see how a release landed. Runs on Filament 3.3, 4 and 5, and has been in production on UPLB-TKS and PerporManTask since 10 Nov 2026. [Source](https://github.com/Darkify19/filament-feedback) · [Docs](https://darkify19.github.io/filament-feedback/) · [Packagist](https://packagist.org/packages/carljanzell/filament-feedback)
+`Laravel` `Filament 3–5` `Livewire` `anime.js` `Pest`
+
+**Bakunawa — Roblox Game** · *Solo · public beta since 11 Nov 2026*
+An original Roblox game: you're a sea serpent eating a Filipino barrio, biting houses until they topple, growing, and fighting other serpents for the moon in a short Eclipse round. Server-authoritative strict-mode Luau, synced from Git into Studio with Rojo, with DataStore saves that never overwrite real progress after a failed load. [Play it on Roblox](https://www.roblox.com/games/18350520472/Bakunawa)
+`Luau` `Roblox` `Rojo` `Selene` `StyLua`
 
 ## 🤖 AI-Native Engineering
 
